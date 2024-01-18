@@ -1,0 +1,54 @@
+MSMS 2.6.1 started on v003
+Copyright M.F. Sanner (1994)
+Compilation flags -O2 -DVERBOSE -DTIMING
+INPUT  tempOut 1427 spheres 0 collision only, radii  0.600 to  1.908
+PARAM  Probe_radius  1.400 density 13.000 hdensity  3.000
+REDUCED SURFACE ...
+    RS component 0 identified 566 564 550
+    0 free edge(s) found in component 0
+    RS component  #faces  #edges #free_edges  #vertices   genus
+         0        1252     1878          0        564      32
+    Time Reduced Surface real: 0.02 user: 0.03 sys: 0.00
+ANALYTICAL SOLVENT EXCLUDED SURFACE...
+    Component   0
+        Time Surface real: 0.00 user: 0.00 sys: 0.00
+        Time Singularities real: 0.00 user: 0.00 sys: 0.00
+    SES comp.  #fac.  #edg. #s_edg. #vert. #s_vert. R_h C_h genus
+         0     3823   7707     83    3884      122   0   0    1
+ANALYTICAL SURFACE AREA :
+    Comp. probe_radius,   reent,    toric,   contact    SES       SAS
+      0       1.400    1070.143  1635.599  1412.804  4118.546  4943.487
+TRIANGULATION...
+    Component 0
+pbr face 1057 dt1=15391 dt2=33637
+ 1 faces with PBR problems
+radius of atom 752 goes from 1.721000 to 1.821000
+radius of atom 1309 goes from 1.387000 to 1.487000
+radius of atom 1310 goes from 1.487000 to 1.587000
+Failed during triangulation, try again 2
+REDUCED SURFACE ...
+    RS component 0 identified 566 564 550
+    0 free edge(s) found in component 0
+    RS component  #faces  #edges #free_edges  #vertices   genus
+         0        1248     1872          0        564      31
+    Time Reduced Surface real: 0.02 user: 0.02 sys: 0.00
+    Component   0
+        Time Surface real: 0.00 user: 0.00 sys: 0.00
+        Time Singularities real: 0.00 user: 0.00 sys: 0.00
+    SES comp.  #fac.  #edg. #s_edg. #vert. #s_vert. R_h C_h genus
+         0     3811   7683     83    3872      122   0   0    1
+ANALYTICAL SURFACE AREA :
+    Comp. probe_radius,   reent,    toric,   contact    SES       SAS
+      0       1.400    1068.952  1635.315  1412.646  4116.914  4942.480
+TRIANGULATION...
+    Component 0
+ERROR: is_point_in_contact_face: not 2 intersection points
+    component#, vertices,  edges,  faces, genus, density
+        0          49785  149355   99570    1    12.093
+        Time Triangulation real: 0.15 user: 0.14 sys: 0.00
+NUMERICAL VOLUMES AND AREA
+    Comp. probe_radius SES_volume SES_area)
+       0      1.40    12609.671   4102.373
+    Total ses_volume: 12609.671
+MSMS terminated normally
+Total Time real: 0.50 user: 0.43 sys: 0.02

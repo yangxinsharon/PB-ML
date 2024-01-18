@@ -1,0 +1,10 @@
+fname pro
+dcel 0.5
+den 15
+epsp 1 
+epsw 80 
+bulk_strength 0.0 
+icg 2
+isf 4
+ibd 3 
+inl 0 

@@ -1,0 +1,62 @@
+MSMS 2.6.1 started on v003
+Copyright M.F. Sanner (1994)
+Compilation flags -O2 -DVERBOSE -DTIMING
+Atom 92 ignored, radius = 0.100000
+Atom 190 ignored, radius = 0.100000
+Atom 240 ignored, radius = 0.100000
+Atom 261 ignored, radius = 0.100000
+Atom 380 ignored, radius = 0.100000
+Atom 413 ignored, radius = 0.100000
+Atom 446 ignored, radius = 0.100000
+Atom 585 ignored, radius = 0.100000
+Atom 749 ignored, radius = 0.100000
+Atom 844 ignored, radius = 0.100000
+Atom 999 ignored, radius = 0.100000
+Atom 1044 ignored, radius = 0.100000
+Atom 1183 ignored, radius = 0.100000
+Atom 1197 ignored, radius = 0.100000
+Atom 1208 ignored, radius = 0.100000
+Atom 1284 ignored, radius = 0.100000
+Atom 1379 ignored, radius = 0.100000
+Atom 1390 ignored, radius = 0.100000
+Atom 1401 ignored, radius = 0.100000
+Atom 1496 ignored, radius = 0.100000
+Atom 1532 ignored, radius = 0.100000
+Atom 1546 ignored, radius = 0.100000
+Atom 1596 ignored, radius = 0.100000
+Atom 1627 ignored, radius = 0.100000
+Atom 1661 ignored, radius = 0.100000
+INPUT  tempOut 1702 spheres 0 collision only, radii  0.600 to  1.908
+PARAM  Probe_radius  1.400 density 13.000 hdensity  3.000
+REDUCED SURFACE ...
+    RS component 0 identified 235 229 230
+    0 free edge(s) found in component 0
+    RS component  #faces  #edges #free_edges  #vertices   genus
+         0        1580     2370          0        707      42.5
+    Time Reduced Surface real: 0.03 user: 0.03 sys: 0.00
+ANALYTICAL SOLVENT EXCLUDED SURFACE...
+    Component   0
+        Time Surface real: 0.00 user: 0.00 sys: 0.00
+        Time Singularities real: 0.00 user: 0.00 sys: 0.00
+    SES comp.  #fac.  #edg. #s_edg. #vert. #s_vert. R_h C_h genus
+         0     4830   9738    110    4910      160   0   0    0
+ANALYTICAL SURFACE AREA :
+    Comp. probe_radius,   reent,    toric,   contact    SES       SAS
+      0       1.400    1378.747  2073.049  1762.875  5214.672  6201.560
+TRIANGULATION...
+    Component 0
+WARNING: geodesic which intersects odd number of edges
+WARNING: geodesic which intersects odd number of edges
+WARNING: geodesic which intersects odd number of edges
+WARNING: geodesic which intersects odd number of edges
+WARNING: geodesic which intersects odd number of edges
+WARNING: geodesic which intersects odd number of edges
+    component#, vertices,  edges,  faces, genus, density
+        0          63237  189705  126470    0    12.127
+        Time Triangulation real: 0.19 user: 0.18 sys: 0.00
+NUMERICAL VOLUMES AND AREA
+    Comp. probe_radius SES_volume SES_area)
+       0      1.40    15136.122   5193.419
+    Total ses_volume: 15136.122
+MSMS terminated normally
+Total Time real: 0.40 user: 0.37 sys: 0.01

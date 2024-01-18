@@ -1,0 +1,47 @@
+MSMS 2.6.1 started on v003
+Copyright M.F. Sanner (1994)
+Compilation flags -O2 -DVERBOSE -DTIMING
+INPUT  tempOut 1700 spheres 0 collision only, radii  0.600 to  1.908
+PARAM  Probe_radius  1.400 density 13.000 hdensity  3.000
+REDUCED SURFACE ...
+    RS component 0 identified 207 205 206
+    0 free edge(s) found in component 0
+    RS component  #faces  #edges #free_edges  #vertices   genus
+         0        1538     2307          0        690      40.5
+    Time Reduced Surface real: 0.02 user: 0.03 sys: 0.00
+ANALYTICAL SOLVENT EXCLUDED SURFACE...
+    Component   0
+        Time Surface real: 0.01 user: 0.00 sys: 0.00
+ordonne_aretes: No cycle in face 3749 (nba=-2)
+ordonne_aretes: No cycle in face 4676 (nba=-2)
+ 2 faces with problems
+radius of atom 797 goes from 1.459000 to 1.559000
+radius of atom 869 goes from 1.487000 to 1.587000
+radius of atom 895 goes from 1.487000 to 1.587000
+radius of atom 1611 goes from 1.459000 to 1.559000
+Failed to compute level 0 surface, try again 2
+REDUCED SURFACE ...
+    RS component 0 identified 207 205 206
+    0 free edge(s) found in component 0
+    RS component  #faces  #edges #free_edges  #vertices   genus
+         0        1526     2289          0        690      37.5
+    Time Reduced Surface real: 0.03 user: 0.02 sys: 0.00
+    Component   0
+        Time Surface real: 0.00 user: 0.01 sys: 0.00
+        Time Singularities real: 0.00 user: 0.00 sys: 0.00
+    SES comp.  #fac.  #edg. #s_edg. #vert. #s_vert. R_h C_h genus
+         0     4637   9327     65    4692      110   0   0    0
+ANALYTICAL SURFACE AREA :
+    Comp. probe_radius,   reent,    toric,   contact    SES       SAS
+      0       1.400    1292.434  2019.162  1676.239  4987.835  5903.236
+TRIANGULATION...
+    Component 0
+    component#, vertices,  edges,  faces, genus, density
+        0          60436  181302  120868    0    12.117
+        Time Triangulation real: 0.17 user: 0.17 sys: 0.00
+NUMERICAL VOLUMES AND AREA
+    Comp. probe_radius SES_volume SES_area)
+       0      1.40    14937.824   4967.754
+    Total ses_volume: 14937.824
+MSMS terminated normally
+Total Time real: 0.40 user: 0.37 sys: 0.00

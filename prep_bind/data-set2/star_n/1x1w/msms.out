@@ -1,0 +1,40 @@
+MSMS 2.6.1 started on v003
+Copyright M.F. Sanner (1994)
+Compilation flags -O2 -DVERBOSE -DTIMING
+INPUT  tempOut 1444 spheres 0 collision only, radii  0.600 to  2.000
+PARAM  Probe_radius  1.400 density 13.000 hdensity  3.000
+REDUCED SURFACE ...
+    RS component 0 identified 583 581 582
+    0 free edge(s) found in component 0
+    RS component  #faces  #edges #free_edges  #vertices   genus
+         0        1250     1875          0        570      28.5
+    Time Reduced Surface real: 0.03 user: 0.02 sys: 0.00
+ANALYTICAL SOLVENT EXCLUDED SURFACE...
+    Component   0
+        Time Surface real: 0.00 user: 0.00 sys: 0.00
+        Time Singularities real: 0.00 user: 0.00 sys: 0.00
+    SES comp.  #fac.  #edg. #s_edg. #vert. #s_vert. R_h C_h genus
+         0     3797   7635     47    3838       90   0   0    1
+ANALYTICAL SURFACE AREA :
+    Comp. probe_radius,   reent,    toric,   contact    SES       SAS
+      0       1.400    1088.589  1683.985  1458.486  4231.060  5083.736
+TRIANGULATION...
+    Component 0
+ERROR: is_point_in_contact_face: not 2 intersection points
+ERROR: is_point_in_contact_face: not 2 intersection points
+ERROR: is_point_in_contact_face: not 2 intersection points
+ERROR: is_point_in_contact_face: not 2 intersection points
+ERROR: is_point_in_contact_face: not 2 intersection points
+ERROR: is_point_in_contact_face: not 2 intersection points
+ERROR: is_point_in_contact_face: not 2 intersection points
+WARNING: geodesic which intersects odd number of edges
+WARNING: geodesic which intersects odd number of edges
+    component#, vertices,  edges,  faces, genus, density
+        0          51216  153648  102432    1    12.105
+        Time Triangulation real: 0.14 user: 0.14 sys: 0.00
+NUMERICAL VOLUMES AND AREA
+    Comp. probe_radius SES_volume SES_area)
+       0      1.40    12811.665   4218.699
+    Total ses_volume: 12811.665
+MSMS terminated normally
+Total Time real: 0.31 user: 0.28 sys: 0.01

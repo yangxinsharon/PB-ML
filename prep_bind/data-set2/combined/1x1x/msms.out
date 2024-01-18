@@ -1,0 +1,36 @@
+MSMS 2.6.1 started on v003
+Copyright M.F. Sanner (1994)
+Compilation flags -O2 -DVERBOSE -DTIMING
+INPUT  tempOut 3154 spheres 0 collision only, radii  0.600 to  1.908
+PARAM  Probe_radius  1.400 density 13.000 hdensity  3.000
+REDUCED SURFACE ...
+    RS component 0 identified 237 231 232
+    0 free edge(s) found in component 0
+    RS component  #faces  #edges #free_edges  #vertices   genus
+         0        2448     3672          0       1104      61
+    Time Reduced Surface real: 0.05 user: 0.04 sys: 0.00
+ANALYTICAL SOLVENT EXCLUDED SURFACE...
+    Component   0
+        Time Surface real: 0.00 user: 0.00 sys: 0.00
+ordonne_arete: warning hole in a reentrant face 6039
+        Time Singularities real: 0.00 user: 0.00 sys: 0.00
+    SES comp.  #fac.  #edg. #s_edg. #vert. #s_vert. R_h C_h genus
+         0     7480  15081    158    7602      248   1   0    1
+ANALYTICAL SURFACE AREA :
+    Comp. probe_radius,   reent,    toric,   contact    SES       SAS
+      0       1.400    2237.298  3232.839  2673.576  8143.712  9402.178
+TRIANGULATION...
+    Component 0
+WARNING: geodesic which intersects odd number of edges
+WARNING: geodesic which intersects odd number of edges
+WARNING: geodesic which intersects odd number of edges
+ERROR: is_point_in_contact_face: not 2 intersection points
+    component#, vertices,  edges,  faces, genus, density
+        0          98417  295251  196834    1    12.085
+        Time Triangulation real: 0.29 user: 0.28 sys: 0.00
+NUMERICAL VOLUMES AND AREA
+    Comp. probe_radius SES_volume SES_area)
+       0      1.40    28089.844   8103.857
+    Total ses_volume: 28089.844
+MSMS terminated normally
+Total Time real: 0.61 user: 0.57 sys: 0.01
