@@ -29,7 +29,6 @@ def getXtest(PDBID):
     os.system('python feature.py')
     os.system('bornRadius -pqr pro.pqr -surf_density 13 -energy total_solv > bornRadius.txt')
     os.system('MS_Intersection pro.pqr 1.4 0.8 1')  
-
     X_test = generate_features(rootdir+'/CoreSet/'+PDBID)
     return X_test
 
@@ -46,7 +45,6 @@ def getXtest(PDBID):
     #     break
     # print(X_test)
 
-########## need a further check: why use X_train for normalization ##########
     # X_train = []
     # X_train_lines = open(rootdir+'/X_train.txt', 'r').readlines()
     # for line in X_train_lines:
@@ -73,12 +71,10 @@ def getXtest(PDBID):
 def runDNN(X_test_norm):
     pbml_model = load_model(rootdir+'/saved_model/364')
     # print(pbml_model.summary())
-
     yhat = pbml_model.predict(X_test_norm)
     yhat = yhat.flatten()
     print(yhat)
     return yhat
-
 
 def output2file(PDBID, yhat, MIBPB, GB, abserr, time):
     f = open(PDBID + '_err.txt', 'w')
@@ -111,9 +107,8 @@ if __name__ == '__main__':
     rootdir = os.path.dirname(os.path.abspath(__file__))
     # input_file = rootdir+'/../../pbml_xu/'+'/ylabel/MIBPBCore.txt'
     # PDBlist = fetchPDBlist(input_file)
-    # PDBlist = ['3muz']
 ######################################################
-    # # read in X_train for StandardScaler
+    ## read in X_train for StandardScaler ##
     X_train = []
     X_train_lines = open(rootdir+'/X_train.txt', 'r').readlines()
     for line in X_train_lines:
@@ -249,6 +244,7 @@ if __name__ == '__main__':
         os.chdir(rootdir)
 
     for PDBID in np.unique(PDBlist):
+        print("start new PDBID")
         print(PDBID)
         # os.system('mkdir prep_bind/data-set2/star_n/'+PDBID)
         # os.system('cp '+rootdir+'/../binding_pqrs/data-set2/'+PDBID+'_barstar_n.pqr '+rootdir+'/prep_bind/data-set2/star_n/'+PDBID+'/pro.pqr')      
@@ -269,6 +265,10 @@ if __name__ == '__main__':
         os.system('MS_Intersection pro.pqr 1.4 0.8 1')  
         X_test = generate_features(rootdir+'/prep_bind/data-set2/star_n/'+PDBID)
         X_test_norm = scaler.transform(np.array(X_test).reshape(1,-1))
+        f = open(PDBID + '_features.txt', 'w')
+        f.write(str(X_test_norm))
+        f.close()
+
         yhat = runDNN(X_test_norm)
         end = timer()
         time = end-start 
