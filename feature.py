@@ -1,7 +1,6 @@
-#### Weihua Geng, Yongjia Xu
 #### PBML Project, Math Department, Southern Methodist University
-#### This script aims to compute several kinds of protein force and extract features out
-#### version: use numba to speed up
+#### This script aims to compute several kinds of graph kernels and protein forces
+#### version: use numba to speed up 
 
 import sys
 import math
@@ -130,7 +129,7 @@ class protein():
                     # self.charg.append(float(line[54:62]))
                     # self.vdWRa.append(float(line[62:70]))
                     # self.AtomPos.append([float(line[30:38]),float(line[38:46]), float(line[46:54])])
-# change for prep_bind
+                    ## change for prep_bind data format ##
                     self.atomx.append(float(line.split()[5]))
                     self.atomy.append(float(line.split()[6]))
                     self.atomz.append(float(line.split()[7]))
@@ -186,8 +185,8 @@ if __name__ == "__main__":
                 output_list += p.Lorqfcn
             else:
                 output_list += p.Lorfcn
-        output_list += p.VDW
-        output_list += p.CLB
+    output_list += p.VDW # yang
+    output_list += p.CLB # yang
     output.write(str(output_list)[1:-1])
     output.close()
     print(time.time() - one)
