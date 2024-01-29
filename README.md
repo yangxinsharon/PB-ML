@@ -12,4 +12,4 @@ it calls the softwares, i.e., the GB solver: bornRadius, the ESES solver: MS_Int
 it calls the above two sciptes to prepare the features for each protein;  
 it uses the trained No.364 model to predict the solvation energy difference between MIBPB at mesh size 0.2 and GB solvation energy;
 it has now been update to predict Barnase and Barstar binding simulation, the corresponding datasets are in prep_bind/data-set2;
-the X_train file containing the 367 features of 4294 proteins is here for data normalization.
+the X_train file containing the 367 features of 4294 proteins is here for data normalization. 
